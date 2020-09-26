@@ -1,5 +1,8 @@
 package com.yufeng.common.result;
 
+import com.alibaba.fastjson.JSON;
+import jdk.nashorn.internal.ir.debug.JSONWriter;
+
 /**
  * @Description
  * @Author yangwu
@@ -47,11 +50,7 @@ public class ResultEntity<T> {
 
     @Override
     public String toString() {
-        return "Result{" +
-                "code=" + code +
-                ", msg='" + msg + '\'' +
-                ", data=" + data +
-                '}';
+        return JSON.toJSONString(this);
     }
 
 

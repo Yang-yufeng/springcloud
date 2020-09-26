@@ -10,8 +10,5 @@
 
     <modules>
         <module>hello-service</module>
-        <module>ribbon</module>
-
-
     </modules>
 </project>

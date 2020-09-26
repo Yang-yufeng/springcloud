@@ -16,11 +16,11 @@ import javax.xml.transform.Result;
 @RestController
 public class HelloController {
 
-    @Value("${server-port}")
+    @Value("${server.port}")
     private int port;
 
 
-    @RequestMapping("hello")
+    @RequestMapping("/hello")
     public String hello(){
         ResultEntity result = new ResultEntity(ResultEnum.SUCCESS);
         result.setData("hello,I am from port"+port);

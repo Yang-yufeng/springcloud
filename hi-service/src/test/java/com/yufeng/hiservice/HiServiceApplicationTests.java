@@ -1,11 +1,11 @@
-package com.yufeng.ribbon;
+package com.yufeng.hiservice;
 
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RibbonApplicationTests {
+class HiServiceApplicationTests {
 
     @Test
     void contextLoads() {

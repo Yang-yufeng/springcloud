@@ -1,11 +1,11 @@
-package com.yufeng.ribbon;
+package com.yufeng.gateway;
 
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RibbonApplicationTests {
+class GatewayApplicationTests {
 
     @Test
     void contextLoads() {

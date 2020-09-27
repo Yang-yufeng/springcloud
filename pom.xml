@@ -10,5 +10,8 @@
 
     <modules>
         <module>hello-service</module>
+        <module>common</module>
+        <module>ribbon</module>
+        <module>gateway</module>
     </modules>
 </project>

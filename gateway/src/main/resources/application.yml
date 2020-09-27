@@ -1,0 +1,25 @@
+server:
+  port: 80
+
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+    gateway:
+      routes:
+      - id: 1
+        uri: lb://hello-service
+        predicates:
+              - Path=/hello-service/*
+        filters:
+        - StripPrefix=1
+      - id: 2
+        uri: lb://hi-service
+        predicates:
+          - Path=/hi-service/*
+        filters:
+          - StripPrefix=1

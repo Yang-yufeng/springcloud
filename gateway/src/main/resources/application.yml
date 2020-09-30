@@ -23,3 +23,7 @@ spring:
           - Path=/hi-service/*
         filters:
           - StripPrefix=1
+
+hello-service:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

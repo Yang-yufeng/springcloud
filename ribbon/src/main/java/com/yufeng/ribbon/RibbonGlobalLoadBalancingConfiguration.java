@@ -30,7 +30,7 @@ public class RibbonGlobalLoadBalancingConfiguration {
         //最低并发策略     BestAvailableRule
         //区域权衡策略     ZoneAvoidanceRule
         //可用过滤策略     AvailabilityFilteringRule
-        rule =  new RoundRobinRule();
+        rule =  new RandomRule();
         return rule; //随机访问策略
     }
 

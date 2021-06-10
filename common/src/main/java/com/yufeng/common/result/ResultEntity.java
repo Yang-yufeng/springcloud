@@ -4,9 +4,9 @@ import com.alibaba.fastjson.JSON;
 import jdk.nashorn.internal.ir.debug.JSONWriter;
 
 /**
- * @Description
- * @Author yangwu
- * CreateTime        202009262239
+ *
+ * @author yangwu
+ * @since 2021/5/7 11:37
  */
 public class ResultEntity<T> {
     private Integer code;

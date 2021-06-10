@@ -1,14 +1,18 @@
 server:
   port: 80
 
-
 spring:
+  profiles:
+    active: test
   application:
     name: api-gateway
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848
+        server-addr: localhost
+      config:
+        server-addr: localhost
+        file-extension: yaml
     gateway:
       routes:
       - id: 1
@@ -24,6 +28,3 @@ spring:
         filters:
           - StripPrefix=1
 
-hello-service:
-  ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hello-service
+  profiles:
+    active: test
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.150.47
+      config:
+        file-extension: yaml
+        server-addr: 172.16.150.47

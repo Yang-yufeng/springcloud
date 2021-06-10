@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: zipkin-server
+  profiles:
+    active: dev
   cloud:
     nacos:
       discovery:
